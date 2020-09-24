@@ -8,13 +8,22 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class WeatherViewController: UIViewController { // тут не рефакторился код, надо быть внимательнее; возможно, дальше придётся с этим иметь дело
+    
+    @IBOutlet weak var conditionImageView: UIImageView!
+    @IBOutlet weak var temperatureLabel: UILabel!
+    @IBOutlet weak var conditionLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-
+    
+    @IBAction func addLocationButtonTapped(_ sender: Any) {
+    }
+    
+    @IBAction func locationButtonTapped(_ sender: Any) {
+    }
+    
 }
 
